@@ -7,7 +7,7 @@ import {NavigationContainer} from '@react-navigation/native'
 import {createDrawerNavigator} from '@react-navigation/drawer' */
 import HomeScreen from '../screens/Home/HomeScreen';
 import VentilatorsScreen from '../screens/Ventilators/VentilatorsScreen';
-import ClinicianPocketReferenceScreen from '../screens/ClinicianPocketReference/ClinicianPocketReferenceScreen';
+//import ClinicianPocketReferenceScreen from '../screens/ClinicianPocketReference/ClinicianPocketReferenceScreen';
 import RecipeScreen from '../screens/Recipe/RecipeScreen';
 import RecipesListScreen from '../screens/RecipesList/RecipesListScreen';
 import DrawerContainer from '../screens/DrawerContainer/DrawerContainer';
@@ -31,7 +31,7 @@ function MainNavigator() {
     >
       <Stack.Screen name='Home' component={HomeScreen} />
       <Stack.Screen name='Ventilators' component={VentilatorsScreen}/>
-      <Stack.Screen name='Clinician Pocket Reference' component={ClinicianPocketReferenceScreen}/>
+      //<Stack.Screen name='Clinician Pocket Reference' component={ClinicianPocketReferenceScreen}/>
       <Stack.Screen name='Recipe' component={RecipeScreen}/>
       <Stack.Screen name='RecipesList' component={RecipesListScreen} />
       <Stack.Screen name='Ingredient' component={IngredientScreen} />
@@ -44,8 +44,8 @@ function MainNavigator() {
 const MainNavigator = createStackNavigator(
   {
     Home: HomeScreen,
-    Ventilators: VentilatorsScreen,
-    ClinicianPocketReference: ClinicianPocketReferenceScreen,
+    Categories: VentilatorsScreen,
+    //ClinicianPocketReference: ClinicianPocketReferenceScreen,
     Recipe: RecipeScreen,
     RecipesList: RecipesListScreen,
     Ingredient: IngredientScreen,
